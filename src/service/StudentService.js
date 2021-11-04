@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export class StudentService{
-    BASEURL = 'http://localhost:5000/api/v2/';
+    BASEURL = 'https://student-api-claro.herokuapp.com/api/v2/';
     getAll(){
         return axios.get(this.BASEURL + "student/all").then(res => res.data);
     }

@@ -65,8 +65,6 @@ export default class App extends Component{
   }
   componentDidMount(){
     this.StudentService.getAll().then(data => this.setState({Student: data}));
-
-
   }
   save(){
     this.StudentService.save(this.state.student).then(data => {
